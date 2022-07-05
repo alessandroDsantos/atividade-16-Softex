@@ -1,0 +1,24 @@
+def calculadora(n1,n2,op):
+
+  if (op == '+'):
+    res = n1 + n2
+  elif (op == '-'):
+    res = n1 - n2
+  elif (op == '*'):
+    res = n1 * n2
+  elif (op == '/'):
+    if (n2 == 0):
+      res = 'Infinity'
+    else:
+      res = n1 / n2
+  else:
+    res = 'Não foi escolhido nenhum dos quatro operadores!'
+  
+  return res
+
+numero1=float(input("Digite o primeiro número:"))
+numero2=float(input("Digite o segundo número:"))
+operacao=input("Digite a opecação que você deseja(+,-,*,/):")
+   
+resposta = calculadora(numero1,numero2,operacao)
+print(resposta)
